@@ -6,5 +6,5 @@ var port = Number(argv.port) || Number(argv.p) || 3000;
 
 app.use(express.static(__dirname + '/public'));
 app.listen(port, function () {
-  console.log('Quiztastic serving directory ' + __dirname + '/public on port ' + port);
+  console.log('Ticktastic listening on port ' + port);
 });

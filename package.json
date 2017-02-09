@@ -1,12 +1,12 @@
 {
-  "name": "TickTastic!",
-  "version": "0.0.1",
-  "description": "A simple app to workshop some basic web-dev principles.",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.14.1",
-    "jquery": "^3.1.1",
-    "minimist": "^1.2.0",
-    "mustache": "^2.3.0"
-  }
+    "name": "TickTastic!",
+    "version": "0.0.1",
+    "description": "A simple app to workshop some basic web-dev principles.",
+    "license": "MIT",
+    "dependencies": {
+	"express": "^4.14.1",
+	"jquery": "^3.1.1",
+	"minimist": "^1.2.0",
+	"mustache": "^2.3.0"
+    }
 }

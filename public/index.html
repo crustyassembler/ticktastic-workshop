@@ -3,75 +3,99 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>TickTastic!</title>
   </head>
   <body>
     <header class="page-header">
-      <h1>TickTastic!</h1>
+      <div class="container">
+	<h1>TickTastic!</h1>
+      </div>
     </header>
 
-    <section>
-      <h2>Submit a new ticket</h2>
-      <form action="" method="post">
-	<div class="form-group">
-	  <label for="name">Your name</label>
-	  <input type="text" name="name" id="name" required>
-	</div>
-	
-	<div class="form-group">
-	  <label for="department">Department</label>
-	  <select name="department" id="department" required>
-	    <option value="">Please choose a department</option>
-	    <option value="accounts">Accounts</option>
-	    <option value="sales">Sales</option>
-	    <option value="it">IT</option>
-	    <option value="hr">Human Resources</option>
-	  </select>
-	</div>
-	
-	<div class="form-group">
-	  <label for="email">Your email</label>
-	  <input type="email" name="email" id="email" required>
-	</div>
-	
-	<div class="form-group">
-	  <label for="telephone">Telephone number (or extension)</label>
-	  <input type="telephone" name="telephone" id="telephone">
-	</div>
-	
-	<div class="form-group">
-	  <label for="priority">Ticket priority</label>
-	  <select name="priority" id="priority" required>
-	    <option value="">Please select the importance of your problem</option>
-	    <option value="annoyance">Important</option>
-	    <option value="trivial">Priority</option>
-	    <option value="dont-worry">Critical</option>
-	    <option value="overblown">Immediate fix required</option>
-	    <option value="potential-issue">I might die as a result of this problem</option>
-	  </select>
-	</div>
-	
-	<div class="form-group">
-	  <label for="details">Details of your issue</label>
-	  <label for="details">Please be as comprehensive as possible, and include any relevant details</label>
-	  <textarea name="details" id="details" required></textarea>
-	</div>
+    <div class="container">
+      <div class="row">
+	<section  class="col-md-8">
+	  <form action="" method="post" class="main-form">
+	    <h2 class="main-form__title">Submit a new ticket</h2>
+	    <p  class="main-form__subtitle"><small>Or don't, I'm not your supervisor.</small></p>
+	    <div class="form-group">
+	      <label for="name" class="control-label">Your name</label>
+	      <input type="text" name="name" id="name" class="form-control" required>
+	    </div>
+	    
+	    <div class="form-group">
+	      <label for="department" class="control-label">Department</label>
+	      <select name="department" id="department" required class="form-control">
+		<option value="">Please choose a department</option>
+		<option value="accounts">Accounts</option>
+		<option value="sales">Sales</option>
+		<option value="it">IT</option>
+		<option value="hr">Human Resources</option>
+	      </select>
+	    </div>
+	    
+	    <div class="form-group">
+	      <label for="email" class="control-label">Your email</label>
+	      <input type="email" name="email" id="email" required class="form-control">
+	    </div>
+	    
+	    <div class="form-group">
+	      <label for="telephone" class="control-label">Telephone number (or extension)</label>
+	      <input type="telephone" name="telephone" id="telephone" class="form-control">
+	    </div>
+	    
+	    <div class="form-group">
+	      <label for="priority" class="control-label">Ticket priority</label>
+	      <select name="priority" id="priority" required class="form-control">
+		<option value="">Please select the importance of your problem</option>
+		<option value="annoyance">Important</option>
+		<option value="trivial">Priority</option>
+		<option value="dont-worry">Critical</option>
+		<option value="overblown">Immediate fix required</option>
+		<option value="potential-issue">I might die as a result of this problem</option>
+	      </select>
+	    </div>
+	    
+	    <div class="form-group">
+	      <label for="details" class="control-label">Details of your issue</label>
+	      <label for="details" class="control-label">Please be as comprehensive as possible, and include any relevant details</label>
+	      <textarea name="details" id="details" required class="form-control"></textarea>
+	    </div>
 
-	<div class="form-group">
-	  <input type="submit" value="Report issue">
-	</div>
-      </form>
-    </section>
+	    <div class="form-group">
+	      <input type="submit" value="Report issue" class="btn btn--block">
+	    </div>
+	  </form>
+	</section>
 
-    <section>
-      <h2>Existing tickets</h2>
-      <ul class="ticket-list">
-	<li class="ticket-list__item"><strong>Barry Rhodes</strong> - HELP!?!</li>
-	<li class="ticket-list__item"><strong>Susan Belvedere</strong> - Network issues.</li>
-	<li class="ticket-list__item"><strong>Barry Rhodes</strong> - Don't worry.</li>
-	<li class="ticket-list__item"><strong>Elaine McWhittle</strong> - The printer broke again.</li>
-	<li class="ticket-list__item"><strong>Barry Rhodes</strong> - IT'S ALL GONE ON FIRE!</li>
-      </ul>
-    </section>
+	<section class="col-md-4 existing-tickets">
+	  <h2 class="existing-tickets__title">Existing tickets</h2>
+	  <ul class="ticket-list">
+	    <li class="ticket-list__item">
+	      <h4 class="ticket-list__title">HELP!?!</h4>
+	      <span class="ticket-list__user">Barry Rhodes</span>
+	    </li>
+	    <li class="ticket-list__item">
+	      <h4 class="ticket-list__title">Network issues.</h4>
+	      <span class="ticket-list__user">Susan Belvedere</span>
+	    </li>
+	    <li class="ticket-list__item">
+	      <h4 class="ticket-list__title">Don't worry.</h4>
+	      <span class="ticket-list__user">Barry Rhodes</span>
+	    </li>
+	    <li class="ticket-list__item">
+	      <h4 class="ticket-list__title">The printer broke again.</h4>
+	      <span class="ticket-list__user">Elaine McWhittle</span>
+	    </li>
+	    <li class="ticket-list__item">
+	      <h4 class="ticket-list__title">IT'S ALL GONE ON FIRE!</h4>
+	      <span class="ticket-list__user">Barry Rhodes</span>
+	    </li>
+	  </ul>
+	</section>
+      </div>
+    </div>
   </body>
 </html>

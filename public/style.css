@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html{
+    font: 400 16px/1.3 'Open sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 1200px;
+}
+
+.page-header {
+    border-bottom: 1px solid lightgrey;
+    padding:  0.75em 0;
+    
+}
+
+.row {
+    margin: 0 -2em;
+}
+
+.col-md-4,
+.col-md-8 {
+    float: left;
+    padding: 0 2em;
+}
+
+.col-md-4 {
+    width: 33%;
+}
+
+.col-md-8 {
+    width: 66%;
+}
+
+.main-form {
+    border: 1px solid lightgrey;
+    padding: 1em 1em 0 1em;
+    margin-top: 2.5em;
+    position: relative;
+}
+
+.main-form__title {
+    position: absolute;
+    top: -1.5em;
+    left: .5em;
+    background: white;
+    padding: 0 .3em;
+}
+
+.main-form__subtitle {
+    margin-bottom: 2em;
+}
+
+.form-control,
+.control-label {
+    display: block;
+    width: 100%;
+    margin: .3em 0;
+}
+
+.form-control {
+    padding: .4em;
+}
+
+.form-group {
+    margin: 1em 0;
+}
+
+.btn {
+    background: black;
+    color: white;
+    border-radius: 0;
+    padding: 1em;
+    border: none;
+    box-shadow: none;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
+}
+
+.existing-tickets {
+    background: lightgrey;
+    padding: 2em;
+}
+
+.existing-tickets__title {
+    margin: 0;
+}
+
+.ticket-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ticket-list li {
+    padding: 0 0 1em;
+}
+
+.ticket-list__title {
+    margin: 0;
+    text-decoration: underline;
+}
+
+.ticket-list__user {
+    font-style: italic;
+}
